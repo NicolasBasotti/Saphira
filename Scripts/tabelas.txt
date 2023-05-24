@@ -1,0 +1,8 @@
+create table funcionario(
+	codfun serial
+	constraint funcionraio_pk primary key,
+	nomfun varchar (40) not null,
+	datnasfun date,
+	cpffun numeric (11,0) not null unique,
+	datadifun date
+);

@@ -1,0 +1,56 @@
+Tabela: Filme
+-----------------------------------------------------
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+-----------------------------------------------------
+| codfilme       | Código do Filme  | INT          |
+| titulo         | Título           | VARCHAR(100) |
+| genero         | Gênero           | VARCHAR(50)  |
+| duracao        | Duração          | INT          |
+-----------------------------------------------------
+
+Tabela: Sala
+-------------------------------------------------------
+| Chave Primária | Nome do Atributo | Tipo de Dado     |
+-------------------------------------------------------
+| codsala        | Código da Sala   | INT              |
+| nome           | Nome             | VARCHAR(100)     |
+| capacidade     | Capacidade       | INT              |
+-------------------------------------------------------
+
+Tabela: Sessao
+---------------------------------------------------------------------
+| Chave Primária | Nome do Atributo  | Tipo de Dado | Chave Estrangeira |
+---------------------------------------------------------------------
+| codsessao      | Código da Sessão  | INT          | -                |
+| codfilme       | Código do Filme   | INT          | Filme.codfilme   |
+| codsala        | Código da Sala    | INT          | Sala.codsala     |
+| horario        | Horário           | DATETIME     | -                |
+---------------------------------------------------------------------
+
+Tabela: Ingresso
+--------------------------------------------------------------------
+| Chave Primária | Nome do Atributo  | Tipo de Dado | Chave Estrangeira |
+--------------------------------------------------------------------
+| codingresso    | Código do Ingresso| INT          | -                |
+| codsessao      | Código da Sessão  | INT          | Sessao.codsessao |
+| preco          | Preço             | DECIMAL(8,2) | -                |
+--------------------------------------------------------------------
+
+Tabela: Cliente
+-----------------------------------------------------
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+-----------------------------------------------------
+| codcliente     | Código do Cliente| INT          |
+| nome           | Nome             | VARCHAR(100) |
+| email          | Email            | VARCHAR(100) |
+-----------------------------------------------------
+
+Tabela: Venda
+-----------------------------------------------------------------
+| Chave Primária | Nome do Atributo | Tipo de Dado | Chave Estrangeira |
+-----------------------------------------------------------------
+| codvenda       | Código da Venda  | INT          | -                |
+| codcliente     | Código do Cliente| INT          | Cliente.codcliente |
+| codingresso    | Código do Ingresso| INT         | Ingresso.codingresso |
+| data           | Data da Venda    | DATE         | -                |
+-----------------------------------------------------------------

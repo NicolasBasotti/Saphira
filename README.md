@@ -5,4 +5,3 @@ Banco de dados de um Cinema
 	Disciplina: Bancos de dados I
 	Descrição: Software: Saphira 
 		   Objetivo: Guardar informação do MELHOR CINEMA DO BRASIL !!! ⚡
-		   comiittest

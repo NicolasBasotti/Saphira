@@ -1,0 +1,14 @@
+Tabela "Telefones":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codtelefone | Código do Telefone | INT |
+| codcliente | Código do Cliente | INT |
+| tipo | Tipo de Telefone | VARCHAR(50) | 
+| numero | Número de Telefone | VARCHAR(20) |
+
+Tabela "Avaliações":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codavaliacao | Código da Avaliação | INT |
+| codfilme | Código do Filme | INT |
+| codcliente | Código do Cliente | INT |
+| nota | Nota da Avaliação | DECIMAL(3,2) |
+| comentario | Comentário | VARCHAR(500) |

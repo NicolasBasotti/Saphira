@@ -12,3 +12,8 @@ Tabela "Avaliações":
 | codcliente | Código do Cliente | INT |
 | nota | Nota da Avaliação | DECIMAL(3,2) |
 | comentario | Comentário | VARCHAR(500) |
+
+Tabela "Classificação":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codclassific | Código da Classificação | INT |
+| nome | Nome da Classificação | VARCHAR(100) |

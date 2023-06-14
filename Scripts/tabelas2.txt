@@ -35,3 +35,8 @@ Tabela "Estoque":
 | codproduto | Código do Produto| INT |
 | quantidade | Quantidade | INT |
 | data_entrada | Data de Entrada | DATE |
+
+Tabela "Gênero":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codgenero | Código do Gênero | INT |
+| nome | Nome do Gênero | VARCHAR(50) |

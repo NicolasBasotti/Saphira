@@ -23,3 +23,15 @@ Tabela "Cidade":
 | codcidade | Código da Cidade | INT |
 | nome | Nome da Cidade | VARCHAR(100) |
 | estado | Estado | VARCHAR(50) |
+
+Tabela "Produto":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codproduto | Código do Produto| INT |
+| nome | Nome do Produto | VARCHAR(100) |
+| descricao | Descrição | VARCHAR(200) |
+Tabela "Estoque":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codestoque | Código do Estoque| INT |
+| codproduto | Código do Produto| INT |
+| quantidade | Quantidade | INT |
+| data_entrada | Data de Entrada | DATE |

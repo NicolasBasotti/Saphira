@@ -17,3 +17,9 @@ Tabela "Classificação":
 | Chave Primária | Nome do Atributo | Tipo de Dado |
 | codclassific | Código da Classificação | INT |
 | nome | Nome da Classificação | VARCHAR(100) |
+
+Tabela "Cidade":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codcidade | Código da Cidade | INT |
+| nome | Nome da Cidade | VARCHAR(100) |
+| estado | Estado | VARCHAR(50) |

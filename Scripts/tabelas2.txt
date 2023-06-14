@@ -40,3 +40,8 @@ Tabela "Gênero":
 | Chave Primária | Nome do Atributo | Tipo de Dado |
 | codgenero | Código do Gênero | INT |
 | nome | Nome do Gênero | VARCHAR(50) |
+
+Tabela "Companhia":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codcompanhia | Código da Companhia | INT |
+| nome | Nome da Companhia | VARCHAR(100) |

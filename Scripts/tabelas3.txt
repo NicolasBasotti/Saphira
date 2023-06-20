@@ -1,7 +1,0 @@
-Tabela "Cadeiras":
-| Chave Primária | Nome do Atributo | Tipo de Dado |
-| codcadeira | Código da Cadeira | INT |
-| sala | Número da Sala | INT |
-| fileira | Número da Fileira | VARCHAR(10) |
-| numero | Número da Cadeira | INT |
-| status | Status da Cadeira | VARCHAR(20) |

@@ -1,4 +1,4 @@
-Tabela "Telefones":
+﻿Tabela "Telefones":
 | Chave Primária | Nome do Atributo | Tipo de Dado |
 | codtelefone | Código do Telefone | INT |
 | codcliente | Código do Cliente | INT |
@@ -45,3 +45,20 @@ Tabela "Companhia":
 | Chave Primária | Nome do Atributo | Tipo de Dado |
 | codcompanhia | Código da Companhia | INT |
 | nome | Nome da Companhia | VARCHAR(100) |
+
+Tabela "Cadeiras":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codcadeira | Código da Cadeira | INT |
+| sala | Número da Sala | INT |
+| fileira | Número da Fileira | VARCHAR(10) |
+| numero | Número da Cadeira | INT |
+| status | Status da Cadeira | VARCHAR(20) |
+
+Tabela "Reserva":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codreserva | Código da Reserva | INT |
+| codcliente | Código do Cliente | INT |
+| codsessao | Código da Sessão | INT |
+| codcadeira | Código da Cadeira | INT |
+| data | Data da Reserva | DATE |
+| status | Status da Reserva | VARCHAR(20) |

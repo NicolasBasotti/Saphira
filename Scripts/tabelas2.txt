@@ -50,7 +50,6 @@ Tabela "Cadeiras":
 | Chave Primária | Nome do Atributo | Tipo de Dado |
 | codcadeira | Código da Cadeira | INT |
 | sala | Número da Sala | INT |
-| fileira | Número da Fileira | VARCHAR(10) |
 | numero | Número da Cadeira | INT |
 | status | Status da Cadeira | VARCHAR(20) |
 
@@ -63,19 +62,11 @@ Tabela "Reserva":
 | data | Data da Reserva | DATE |
 | status | Status da Reserva | VARCHAR(20) |
 
-Tabela "Plano_Mensal":
+Tabela "Plano":
 | Chave Primária | Nome do Atributo | Tipo de Dado |
 | codplano_mensal | Código do Plano Mensal | INT |
 | nome | Nome do Plano Mensal | VARCHAR(100) |
 | numero_visitas | Número de Visitas Permitidas | INT |
-| cadeira_livre | Permitir Escolha de Cadeira | BOOLEAN |
-
-Tabela "Plano_Anual":
-| Chave Primária | Nome do Atributo | Tipo de Dado |
-| codplano_anual | Código do Plano Anual | INT |
-| nome | Nome do Plano Anual | VARCHAR(100) |
-| numero_visitas | Número de Visitas Permitidas | INT |
-| cadeira_livre | Permitir Escolha de Cadeira | BOOLEAN |
 
 Tabela "Assinatura":
 | Chave Primária | Nome do Atributo | Tipo de Dado |

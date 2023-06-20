@@ -62,3 +62,25 @@ Tabela "Reserva":
 | codcadeira | Código da Cadeira | INT |
 | data | Data da Reserva | DATE |
 | status | Status da Reserva | VARCHAR(20) |
+
+Tabela "Plano_Mensal":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codplano_mensal | Código do Plano Mensal | INT |
+| nome | Nome do Plano Mensal | VARCHAR(100) |
+| numero_visitas | Número de Visitas Permitidas | INT |
+| cadeira_livre | Permitir Escolha de Cadeira | BOOLEAN |
+
+Tabela "Plano_Anual":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codplano_anual | Código do Plano Anual | INT |
+| nome | Nome do Plano Anual | VARCHAR(100) |
+| numero_visitas | Número de Visitas Permitidas | INT |
+| cadeira_livre | Permitir Escolha de Cadeira | BOOLEAN |
+
+Tabela "Assinatura":
+| Chave Primária | Nome do Atributo | Tipo de Dado |
+| codassinatura | Código da Assinatura | INT |
+| codcliente | Código do Cliente | INT |
+| codplano | Código do Plano (mensal ou anual) | INT |
+| data_inicio | Data de Início da Assinatura | DATE |
+| data_fim | Data de Término da Assinatura | DATE |

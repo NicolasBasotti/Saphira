@@ -15,12 +15,7 @@ Bem-vindo(a) ao repositório do projeto ⚡ Saphira ⚡! Este projeto foi desenv
 
 🔐 O repositório está organizado da seguinte maneira 🔐
 
-##├── docs
-##├── modelagem
-##├── script
-##├── README.md
-
-- A pasta `/docs` contém a documentação do projeto, `/modelagem` o diagrama Entidade-Relacionamento (ER) e o script SQL para criação do banco de dados.
+- A pasta `/docs` contém a documentação do projeto, `/modelagem` o diagrama Entidade-Relacionamento (ER) e o `/script` contendo script SQL para criação do banco de dados.
 - O arquivo `README.md` no diretório raiz fornece uma visão geral do projeto e suas funcionalidades.
 
 

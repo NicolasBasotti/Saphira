@@ -4,7 +4,7 @@ Bem-vindo(a) ao repositório do projeto ⚡ Saphira ⚡! Este projeto foi desenv
 
 ## Funcionalidades
 
-📚✨ O projeto de Banco de Dados para Cinema oferece as seguintes funcionalidades principais ✨📚
+📚✨ O projeto ⚡ Saphira ⚡ oferece as seguintes funcionalidades principais ✨📚
 
 - Cadastro e gerenciamento de filmes, incluindo título, gênero e duração.
 - Cadastro e gerenciamento de salas de exibição, contendo informações como número de assentos e recursos disponíveis.

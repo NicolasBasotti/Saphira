@@ -38,20 +38,22 @@ COMMENT ON COLUMN Companhia.codcom IS 'Código da Companhia do Filme';
 COMMENT ON COLUMN Companhia.nomcom IS 'Nome da Companhia do Filme';
 
 CREATE TABLE Filme (
-	codfil    SERIAL NOT NULL, 
-	nomfil    varchar(100) NOT NULL, 
-	genfil    varchar(50) NOT NULL, 
-	temdurfil int4 NOT NULL, 
-	codclafil int4 NOT NULL, 
-	codavacli numeric(3, 0) NOT NULL, 
-	codgenfil int4 NOT NULL, 
-	codcom    int4 NOT NULL, 
-	PRIMARY KEY (codfil));
-
+  codfil    SERIAL NOT NULL, 
+  nomfil    varchar(100) NOT NULL, 
+  genfil    varchar(50) NOT NULL, 
+  temdurfil int4 NOT NULL, 
+  codclafil int4 NOT NULL, 
+  codavacli numeric(3, 0) NOT NULL, 
+  codgenfil int4 NOT NULL, 
+  codcom    int4 NOT NULL, 
+  datlanfil date NOT NULL, 
+  PRIMARY KEY (codfil));
 COMMENT ON COLUMN Filme.codfil IS 'Código do Filme';
 COMMENT ON COLUMN Filme.nomfil IS 'Nome do filme';
 COMMENT ON COLUMN Filme.genfil IS 'Gênero do Filme';
 COMMENT ON COLUMN Filme.temdurfil IS 'Tempo de duração do filme';
+COMMENT ON COLUMN Filme.datlanfil IS 'Data de lançamento do filme';
+
 
 CREATE TABLE Funcionario (
 	codfun    SERIAL NOT NULL, 

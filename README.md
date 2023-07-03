@@ -8,7 +8,7 @@ Bem-vindo(a) ao repositório do projeto ⚡ Saphira ⚡! Este projeto foi desenv
 
 - Cadastro e gerenciamento de filmes, incluindo título, gênero e duração.
 - Cadastro e gerenciamento de salas de exibição, contendo informações como número de assentos e recursos disponíveis.
-- Agendamento e gerenciamento de sessões, permitindo a definição de filmes, horários e salas de exibição.
+- Gerenciamento de sessões, permitindo a definição de filmes, horários e salas de exibição.
 - Registro e controle de ingressos vendidos, com informações sobre o cliente, sessão e assento selecionado.
 
 ## Estrutura do Projeto

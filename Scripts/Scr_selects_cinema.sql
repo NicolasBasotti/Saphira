@@ -10,6 +10,18 @@ select *from  sessao;
 select *from vendas;
 select  *from companhia;
 
+delete from funcionario;
+delete from vendas;
+delete from cliente;
+delete from ingresso ;
+delete from sessao;
+delete from sala;
+delete from cinema;
+delete from filme;
+delete from companhia;
+delete from "Genero do filme";
+delete from "Classificação Idade";
+
 
 --1) Relação do nome do filme, tempo de
 --duração e o gênero de todos os filmes.
@@ -107,10 +119,11 @@ FROM
   JOIN Ingresso i ON s.codses = i.codses
   JOIN Vendas v ON i.coding = v.coding
 WHERE
-  f.genfil <> 'Drama'
+  f.codgenfil = 2 
   AND EXTRACT (YEAR FROM f.datlanfil) >= 2018 
   AND ci.codclafil  >= 3
 GROUP BY
   f.codfil, f.nomfil
-ORDER BY
-  "Total de Bilheteria" DESC;
+ORDER by
+  "Total de Bilheteria" DESC; 
+

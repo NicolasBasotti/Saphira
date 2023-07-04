@@ -159,7 +159,6 @@ VALUES
 
 
 
-
 INSERT INTO filme
 (codfil, nomfil, genfil, temdurfil, codclafil, codavacli, codgenfil, codcom,datlanfil)
 VALUES
@@ -173,7 +172,7 @@ VALUES
 INSERT INTO filme
 (codfil, nomfil, genfil, temdurfil, codclafil, codavacli, codgenfil, codcom,datlanfil)
 VALUES
-(3, 'Filme C', 'Comédia', '95', 1, 2, 3, 3,'2020-03-10');
+(3, 'Filme C', 'Ação', '95', 1, 2, 3, 3,'2020-03-10');
 
 INSERT INTO filme
 (codfil, nomfil, genfil, temdurfil, codclafil, codavacli, codgenfil, codcom,datlanfil)
@@ -188,17 +187,17 @@ VALUES
 INSERT INTO filme
 (codfil, nomfil, genfil, temdurfil, codclafil, codavacli, codgenfil, codcom,datlanfil)
 VALUES
-(6, 'Filme F', 'Romance', '120', 2, 3, 4, 3,'2019-03-05');
+(6, 'Filme F', 'Drama', '120', 2, 3, 2, 3,'2019-03-05');
 
 INSERT INTO filme
 (codfil, nomfil, genfil, temdurfil, codclafil, codavacli, codgenfil, codcom,datlanfil)
 VALUES
-(7, 'Filme G', 'Comédia', '100', 3, 1, 3, 2,'2018-03-08');
+(7, 'Filme G', 'Drama', '100', 3, 1, 2, 2,'2018-03-08');
 
 INSERT INTO filme
 (codfil, nomfil, genfil, temdurfil, codclafil, codavacli, codgenfil, codcom,datlanfil)
 VALUES
-(8, 'Filme H', 'Aventura', '130', 4, 2, 5, 3,'2018-09-05');
+(8, 'Filme H', 'Drama', '130', 4, 2, 2, 3,'2018-09-05');
 
 INSERT INTO filme
 (codfil, nomfil, genfil, temdurfil, codclafil, codavacli, codgenfil, codcom,datlanfil)
@@ -208,7 +207,7 @@ VALUES
 INSERT INTO filme
 (codfil, nomfil, genfil, temdurfil, codclafil, codavacli, codgenfil, codcom,datlanfil)
 VALUES
-(10, 'Filme J', 'Ação', '105', 3, 3, 1, 2,'2017-05-05'); 
+(10, 'Filme J', 'Drama', '105', 3, 3, 2, 2,'2017-05-05'); 
 
 
  -- Salas
@@ -338,3 +337,68 @@ VALUES
 
 
  
+-- Inserts para testar o select 3) 
+ 
+-- Inserts para vendas no ano de 2020
+
+-- Venda 1
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (6,'2020-01-05', 1, 1);
+
+-- Venda 2
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (7,'2020-02-10', 2, 2);
+
+-- Venda 3
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (8,'2020-03-15', 3, 3);
+
+-- Venda 4
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (15,'2020-01-07', 1, 1);
+
+-- Venda 5
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (12,'2020-01-06', 1, 1);
+
+-- Venda 6
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (13,'2020-01-05', 1, 1);
+
+
+-- Inserts para vendas no ano de 2021
+
+-- Venda 1
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (9,'2021-01-02', 4, 4);
+
+-- Venda 2
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (10,'2021-02-07', 5, 5);
+
+-- Venda 3
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (11,'2021-03-12', 5, 5);
+
+-- Venda 4 
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (14,'2021-03-13', 5, 5);
+
+
+-- Venda 11 
+INSERT INTO Vendas (codven,datven, coding, codcli)
+VALUES (16,'2021-03-14', 5, 5);
+
+
+-- Inserts para testar o select 04)
+
+INSERT INTO Filme (codfil, nomfil, genfil, temdurfil, codclafil, codavacli, codgenfil, codcom, datlanfil)
+VALUES (14,'Filme 4', 'Drama', 120, 3, 1, 1, 1, '2022-01-01'),
+       (15,'Filme 5', 'Drama', 110, 4, 2, 2, 1, '2023-03-15'),
+       (16,'Filme 6', 'Drama', 95, 5, 3, 1, 2, '2022-11-30');
+       
+INSERT INTO Sessao (codses, horses, codfil, codsal)
+	VALUES (11,'2023-07-04 14:00', 1, 1), (12,'2023-07-04 16:30', 2, 2), (13,'2023-07-04 19:00', 3, 3);
+	
+INSERT INTO Vendas (codven,datven, coding, codcli)
+	VALUES (17,'2023-07-04', 1, 1), (18,'2023-07-04', 2, 2), (19,'2023-07-05', 3, 1), (20,'2023-07-05', 4, 2), (21,'2023-07-06', 5, 1);

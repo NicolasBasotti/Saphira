@@ -57,7 +57,7 @@ inner join sala sal on
 where
 	fil.temdurfil >= 90
 order by
-	sal.nomsal;
+	sal.nomsal desc;
 
 
 
